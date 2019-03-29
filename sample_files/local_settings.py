@@ -70,6 +70,9 @@ COMPRESS_JS_FILTERS = ['compressor.filters.jsmin.JSMinFilter']
 COMPRESS_STORAGE = 'compressor.storage.GzipCompressorFileStorage'
 STATICFILES_FINDERS += ('compressor.finders.CompressorFinder',)
 
+## Allow user registration
+## Uncomment to close the registration
+#REGISTRATION_OPEN = False
 
 #########################################
 ########## Email configuration ##########
